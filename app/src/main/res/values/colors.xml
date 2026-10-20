@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49566C</color>
+    <color name="colorPrimaryDark">#323B4A</color>
+    <color name="colorAccent">#49566C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="title_background_color">#EDEDED</color>
+    <color name="title_text">#94000000</color>
+    <color name="exam_title_text">#DBBAC7</color>
+    <color name="button_bg">#EEA6BE</color>
+    <color name="title_pink">#EEA6BE</color>
+    <color name="text_pink">#EEA6BE</color>
+    <color name="light_pink">#fdd0d6</color>
+    <color name="baby_bg">#f1c5a6</color>
+    <color name="baby_content_bg">#f8ead9</color>
+    <color name="list_title">#34beb1</color>
+    <color name="list_content">#8ddbd6</color>
+    <color name="consumer_title">#697ea8</color>
+    <color name="consumer_content">#b7d9fe</color>
+    <color name="lightcorol">#FF615C</color>
+    <color name="maincolor">#FF887A</color>
+    <color name="disable_text_color">#868686</color>
+    <color name="material_animations_primary">#039BE5</color>
+    <color name="material_animations_primary_dark">#0277BD</color>
+    <color name="material_animations_blank">#424242</color>
+    <color name="material_animations_accent">#3F51B5</color>
+    <color name="text_light">@android:color/white</color>
+    <color name="text_dark">#94000000</color>
+    <color name="buttonTintColorHighlighted">#B67711</color>
+    <!-- theme colors -->
+    <color name="theme_blue_background">#84ffff</color>
+    <color name="theme_blue_primary">#4FC3F7</color>
+    <color name="theme_blue_accent">#ff193a</color>
+    <color name="theme_blue_text">@color/text_dark</color>
+    <color name="theme_blue_text_inverse">@android:color/black</color>
+    <color name="theme_blue_primary_dark">#039BE5</color>
+
+    <color name="theme_green_background">#b9f6ca</color>
+    <color name="theme_green_primary">#669900</color>
+    <color name="theme_green_accent">#e919ff</color>
+    <color name="theme_green_text">@color/text_dark</color>
+    <color name="theme_green_primary_dark">#558B2F</color>
+
+    <color name="theme_purple_background">#b388ff</color>
+    <color name="theme_purple_primary">#7e57c2</color>
+    <color name="theme_purple_accent">#ff9419</color>
+    <color name="theme_purple_text">@color/text_light</color>
+    <color name="theme_purple_primary_dark">#6c4aa6</color>
+
+    <color name="theme_red_background">#ff8a80</color>
+    <color name="theme_red_primary">#ff5252</color>
+    <color name="theme_red_accent">#fffc19</color>
+    <color name="theme_red_text">@color/text_light</color>
+    <color name="theme_red_primary_dark">#e64a4a</color>
+    <color name="theme_red_primary_transparent">#25e64a4a</color>
+
+    <color name="theme_yellow_background">#ffff8d</color>
+    <color name="theme_yellow_primary">#ff8800</color>
+    <color name="theme_yellow_accent">#19dcff</color>
+    <color name="theme_yellow_text">@color/text_dark</color>
+    <color name="theme_yellow_primary_dark">#EF6C00</color>
+    <color name="green">#00e676</color>
+    <color name="red">#ff5252</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="light_grey2">#a8a8a8</color>
+    <color name="backgroundColor">#F6F3F1</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColorPrimary">#EA87AD</color>
+</resources>

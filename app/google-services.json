@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748315983522",
+    "project_id": "swlibray2",
+    "storage_bucket": "swlibray2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748315983522:android:67a53e9f16cd9cb82421fb",
+        "android_client_info": {
+          "package_name": "com.moon.momcare.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748315983522-8eme0jbtgtr3ssro38tl1gnit947nqb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTyBoHfa3YDOxZPNibaH-n_0B13M0jLE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748315983522-8eme0jbtgtr3ssro38tl1gnit947nqb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

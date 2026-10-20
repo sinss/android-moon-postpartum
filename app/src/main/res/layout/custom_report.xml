@@ -1,0 +1,141 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/report_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/report_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/report_close">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="@string/room_number"/>
+            <EditText
+                android:id="@+id/room_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:background="@drawable/circle_28232d_r5_bg"
+                android:layout_toRightOf="@+id/room"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="@string/email"/>
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:background="@drawable/circle_28232d_r5_bg"
+                android:layout_toRightOf="@+id/email"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/full"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="@string/accout_full"/>
+            <Switch
+                android:id="@+id/full_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/full"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:text="@string/qustaion_detail"/>
+
+            <EditText
+                android:id="@+id/report_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="10"
+                android:gravity="top"
+                android:hint="@string/please_input_detail"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:background="@drawable/circle_28232d_r5_bg"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:layout_toRightOf="@+id/detail"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/report_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/report"
+        app:layout_constraintTop_toBottomOf="@+id/layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

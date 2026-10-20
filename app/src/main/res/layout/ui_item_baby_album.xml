@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <li.com.bobsonclinic.viewer.roundedimageview.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="6dp"
+        app:riv_corner_radius="6dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-03-03"
+        android:id="@+id/date_txtV"
+        android:layout_below="@+id/imageView"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:gravity="center" />
+
+</RelativeLayout>

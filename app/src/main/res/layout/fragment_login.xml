@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/frame_0_1_background"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/account"
+            android:padding="8dp"
+            android:textColor="@color/title_pink"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_bg"
+            android:textSize="24dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textColor="@color/text_pink"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/password"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/title_pink"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:imeOptions="actionGo"
+            android:textSize="24dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_bg"
+        android:textSize="24dp"
+        android:text="登入"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

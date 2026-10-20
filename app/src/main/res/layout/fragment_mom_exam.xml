@@ -1,0 +1,446 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back"
+            android:background="?android:selectableItemBackground"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/right_btn"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/weight_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_baby_content_bg"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/weight_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/weight_icon"
+                        android:text="@string/weight"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/weight_exp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/exp_icon"
+                        android:visibility="invisible"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/weight_title"
+                        android:text="--"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/weight_title"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/weight"
+                        android:gravity="bottom"
+                        android:text="@string/weight_unit"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/milk_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_baby_content_bg"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/milk_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mom_milk"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/milk_exp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/exp_icon"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/milk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/milk_title"
+                        android:text="@string/ul_ul"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/milk_title"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/milk"
+                        android:gravity="bottom"
+                        android:text="@string/ml"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/heart_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_baby_content_bg"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:id="@+id/heart_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/heart"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/heart_exp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/exp_icon"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/heart_title"
+                        android:text="@string/ul_ul"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/heart_title"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/heart"
+                        android:gravity="bottom"
+                        android:text="@string/time_min"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/breath_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_baby_content_bg"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:id="@+id/breath_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/breath_icon"
+                        android:text="@string/breath"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/breath_exp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/exp_icon" />
+
+                    <TextView
+                        android:id="@+id/breath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/breath_title"
+                        android:text="@string/ul_ul"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/breath_title"
+                        android:layout_toRightOf="@+id/breath"
+                        android:gravity="bottom"
+                        android:layout_margin="5dp"
+                        android:text="@string/time_min"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/corner_baby_content_bg"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/blood_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:id="@+id/systolc_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/systolc"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/systolc_blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/systolc_str"
+                        android:text="@string/ul_ul"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/systolc_str"
+                        android:layout_toRightOf="@+id/systolc_blood"
+                        android:gravity="bottom"
+                        android:layout_margin="5dp"
+                        android:text="mmHg"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/blood_layout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/blood_exp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/exp_icon" />
+
+                    <TextView
+                        android:id="@+id/diastolc_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/systolc"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/diastolc_blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/diastolc_str"
+                        android:text="@string/ul_ul"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_below="@+id/diastolc_str"
+                        android:layout_toRightOf="@+id/diastolc_blood"
+                        android:gravity="bottom"
+                        android:layout_margin="5dp"
+                        android:text="mmHg"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/temperature_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_baby_content_bg"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/temperature_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/temperature_icon"
+                        android:text="@string/temperature"
+                        android:textColor="@color/exam_title_text"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/temperature_exp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/exp_icon" />
+
+                    <TextView
+                        android:id="@+id/temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/temperature_title"
+                        android:text="@string/ul_ul"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/temperature"
+                        android:layout_below="@+id/temperature_title"
+                        android:gravity="bottom"
+                        android:text="℃"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

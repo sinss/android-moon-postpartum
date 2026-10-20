@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/mom_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hi_mom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mom_name"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/mom_name"
+            android:text="@string/hi_mom"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/in_date_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mom_name"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/in_day"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/in_date_str"
+            android:layout_alignTop="@+id/in_date_str"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/out_date_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/in_date_str"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/out_day"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/out_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/out_date_str"
+            android:layout_alignTop="@+id/out_date_str"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/title_modified_password"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/logout"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:gravity="right"
+            android:text="@string/modified_password"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/popupV"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:layout_toLeftOf="@+id/title_modified_password" />
+
+    </RelativeLayout>
+</LinearLayout>

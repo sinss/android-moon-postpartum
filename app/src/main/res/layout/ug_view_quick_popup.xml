@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:id="@+id/VScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_up"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:visibility="gone"/>
+
+
+        <HorizontalScrollView
+            android:id="@+id/HScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/img_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_triangle_down"
+            android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<resources>
+    <!-- Begin of GCM -->
+    <string name="gcm_sender_id">637027593150</string>
+    <!-- End of GCM -->
+    <string name="version">V 1.3.8 (1)</string>
+
+    <string name="app_cast_id">D61B8405</string>
+
+    <string name="app_name">幸福玥</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="isexist_app">是否離開程式？</string>
+    <string name="determine">確定</string>
+    <string name="interruption_network">連線已中斷\n請檢查您的網路狀態</string>
+    <string name="interruption_network_error">連線異常</string>
+    <string name="co">元</string>
+    <string name="free">免費</string>
+    <string name="cancel">取消</string>
+    <string name="hi_mom">媽咪您好</string>
+    <string name="in_day">住院日</string>
+    <string name="out_day">出院日</string>
+    <string name="ok">知道了</string>
+    <string name="logining">登入中</string>
+    <string name="loading">讀取中</string>
+    <string name="account_or_password_error">帳號密碼錯誤</string>
+
+    <string name="goback_addservice">回加值服務</string>
+    <string name="goback_class">回課程列表</string>
+    <string name="class_intro">課程簡介:</string>
+    <string name="fee">費用:</string>
+    <string name="date_d">日期:</string>
+    <string name="is_check">已預約</string>
+    <string name="is_class">已報名</string>
+    <string name="un_class">未報名</string>
+    <string name="is_check_finish">預約完成後，將有專人與您安排時間</string>
+    <string name="no_check_service">目前\"無\"預約服務。請電洽客服。費用如上方所示!</string>
+    <string name="date_time">日期時間:</string>
+    <string name="is_added">已報名</string>
+    <string name="remaining">剩餘名額</string>
+    <string name="checked_count">已報名人數</string>
+    <string name="today_schedule">今日計劃</string>
+    <string name="news">最新消息</string>
+    <string name="m_class">月課程</string>
+    <string name="account">帳號</string>
+    <string name="password">密碼</string>
+    <string name="check_table">檢查總表</string>
+    <string name="prev_day">前一筆</string>
+    <string name="next_day">後一筆</string>
+    <string name="weight">體重</string>
+    <string name="mom_milk">母乳量</string>
+    <string name="baby_mom_milk">當日餵奶量</string>
+    <string name="milk">奶量</string>
+    <string name="heart">心跳</string>
+    <string name="blood">血壓</string>
+    <string name="breath">呼吸</string>
+    <string name="temperature">體溫</string>
+    <string name="weight_unit">公斤</string>
+    <string name="weight_unit_g">公克</string>
+    <string name="ml">ml</string>
+    <string name="time_min">次/分</string>
+    <string name="systolc">收縮壓</string>
+    <string name="diastolc">舒張壓</string>
+    <string name="daily_tempertaure">每日體溫、脈搏、血壓</string>
+    <string name="day_wc">當日大小便</string>
+    <string name="jaundice">黃疸指數</string>
+    <string name="m_milk_a">母乳(親餵)</string>
+    <string name="m_milk_b">母乳(瓶裝)</string>
+    <string name="m_milk_c">配方奶(瓶裝)</string>
+
+    <string name="m_milk_time_a">瓶裝母乳</string>
+    <string name="m_milk_time_b">配方奶</string>
+    <string name="m_milk_time_c">母乳親餵</string>
+
+    <string name="small_p">小便</string>
+    <string name="big_p">大便</string>
+    <string name="time">次</string>
+    <string name="token_fail">認證過期\n請重新登入</string>
+    <string name="fail_601">帳號或密碼錯誤</string>
+    <string name="video_fail">目前尚未開放，請連絡管理人員</string>
+    <string name="date">日期</string>
+    <string name="temperature_c">體溫(℃)</string>
+    <string name="heart_time">脈搏(次/分)</string>
+    <string name="blood_mmhg">血壓(mmHg)</string>
+
+    <string name="aboutus">關於我們</string>
+    <string name="momeydialy">媽咪日記</string>
+    <string name="babyimg">寶寶影像</string>
+    <string name="mybaby">我的寶寶</string>
+    <string name="teachinfo">衛教資訊</string>
+    <string name="monthclass">本月課程</string>
+    <string name="consoumerdetail">消費明細</string>
+    <string name="addservice">加值服務</string>
+    <string name="nodata">目前尚未有資料!</string>
+    <string name="baby_photo">寶寶照片</string>
+
+
+    <string name="modified_password">修改密碼</string>
+    <string name="input_password">輸入新密碼</string>
+    <string name="input_password_hint">請輸入4位以上的英文或數字</string>
+    <string name="confirm_password">再次確認密碼</string>
+    <string name="modified">修改</string>
+
+
+    <string name="cast_connected_to">連線至</string>
+    <string name="toast_connection_error">連線失敗,請重新嘗試！</string>
+    <string name="this_month_no_class">本月尚未提供課程</string>
+    <string name="ul_ul">--</string>
+
+    <string name="new_version_update_title">版本更新</string>
+    <string name="new_version_update_message">有新版本是否前往更新？</string>
+    <string name="go_to_update">前往更新</string>
+    <string name="warring">注意</string>
+
+    <!-- Tab Bar -->
+    <string name="nav_home">首頁</string>
+    <string name="nav_service">服務</string>
+    <string name="nav_media">影音</string>
+    <string name="nav_my">個人</string>
+    <string name="nav_about">關於</string>
+    <string name="logout">登出</string>
+
+    <string name="retry">重新連線</string>
+    <string name="take_phote">拍照</string>
+    <string name="close">關閉</string>
+    <string name="report">回報</string>
+    <string name="connecting">連線中</string>
+    <string name="playing">播放中</string>
+    <string name="play_error">連線失敗，請聯絡管理員</string>
+    <string name="error_baby_no_setting_camera">目前寶寶尚未設定設影機，請聯繫院所人員進行設定</string>
+    <string name="error_baby_no_setting">目前您的帳號尚未設定寶寶，請聯繫院所人員進行設定</string>
+    <string name="error_camera_close">目前為院所攝影機關閉時間，詳情請洽詢院所人員</string>
+    <string name="error_no_wify">您的網路品質不穩，請切換wifi或是移至訊號穩定的地點再進行使用</string>
+
+    <string name="room_number">房號</string>
+    <string name="email">電子郵件</string>
+    <string name="accout_full">吃到飽</string>
+    <string name="qustaion_detail">問題說明</string>
+    <string name="please_input_detail">請在此輸入說明</string>
+</resources>
